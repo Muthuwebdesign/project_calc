@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="cal.css">
+    <script src="jscal.js"></script>
+</head>
+<body>
+ <div class="Calculator">
+    <h1>Simple Calculator</h1>
+    <input type = "text" id="res" placeholder="0">
+    <div >
+        <button class="operator" onclick="ac()">AC</button>
+        <button class="operator" onclick="ac()">DEL</button>
+        <button class="operator" onclick="show('%')">%</button>
+        <button class="operator" onclick="show('/')">/</button>
+    </div>
+    <div >
+        <button onclick="show('7')">7</button>
+        <button onclick="show('8')">8</button>
+        <button onclick="show('9')">9</button>
+        <button class="operator" onclick="show('*')">*</button>
+    </div>
+    <div >
+        <button onclick="show('4')">4</button>
+        <button onclick="show('5')">5</button>
+        <button onclick="show('6')">6</button>
+        <button class="operator" onclick="show('-')">-</button>
+    </div>
+    <div>
+        <button onclick="show('1')">1</button>
+        <button onclick="show('2')">2</button>
+        <button onclick="show('3')">3</button>
+        <button class="operator" onclick="show('+')">+</button>
+    </div>
+    <div>
+        <button onclick="show('00')">00</button>
+        <button onclick="show('0')">0</button>
+        <button onclick="show('.')">.</button>
+        <button class="equalbtn" onclick="cal()">=</button>
+    </div>
+    </div>
+ </div>    
+</body>
+</html>
